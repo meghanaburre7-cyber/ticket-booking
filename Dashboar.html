@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Ticket Booking</h1>
+
+        <label>Select Movie:</label>
+        <select id="movie">
+            <option>RRR</option>
+            <option>Pushpa</option>
+            <option>Salaar</option>
+        </select>
+
+        <label>Number of Tickets:</label>
+        <input type="number" id="tickets" min="1">
+
+        <button onclick="bookTicket()">Book Now</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
