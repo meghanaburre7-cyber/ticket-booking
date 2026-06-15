@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{text-align:center;font-family:Arial;}
+div{margin-top:50px;}
+</style>
+</head>
+<body>
+
+<div>
+<h2>Movie Ticket Booking</h2>
+
+<input id="name" placeholder="Name"><br><br>
+
+<select id="movie">
+<option>Pushpa 2</option>
+<option>RRR</option>
+<option>Salaar</option>
+</select><br><br>
+
+<input id="tickets" type="number" placeholder="Tickets"><br><br>
+
+<button onclick="book()">Book</button>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function book(){
+let n=document.getElementById("name").value;
+let m=document.getElementById("movie").value;
+let t=document.getElementById("tickets").value;
+document.getElementById("msg").innerHTML=
+"Booked "+t+" ticket(s) for "+m+" by "+n;
+}
+</script>
+
+</body>
+</html>
